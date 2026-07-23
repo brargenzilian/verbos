@@ -1,0 +1,19 @@
+{
+  "name": "verbos",
+  "version": "1.0.0",
+  "description": "An application with hundreds of regular and irregular verbs that will help you understand their different conjugations.",
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@codeberg.org/brargenzilian/verbos.git"
+  },
+  "license": "GPL-3.0",
+  "author": "Brargenzilian",
+  "type": "commonjs",
+  "private": "true",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "typescript": "^7.0.2"
+  }
+}
