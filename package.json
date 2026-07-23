@@ -11,7 +11,10 @@
   "type": "commonjs",
   "private": "true",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile-ts": "tsc --build",
+    "copy-html": "cp ./src/index.html ./docs && cp -r ./src/views ./src/assets ./docs",
+    "build": "npm run copy-html && npm run compile-ts"
   },
   "devDependencies": {
     "typescript": "^7.0.2"
