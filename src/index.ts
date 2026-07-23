@@ -1,2 +1,2 @@
-import './components/test.ts';
+import './components/test';
 const test = '';
