@@ -11,10 +11,12 @@
   "type": "commonjs",
   "private": "true",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rm -rf docs/*",
     "compile-ts": "tsc --build",
-    "copy-html": "cp ./src/index.html ./docs && cp -r ./src/views ./src/assets ./docs",
-    "build": "npm run copy-html && npm run compile-ts"
+    "copy-css": "cp ./src/style.css ./docs",
+    "copy-assets": "cp -r ./src/assets ./docs",
+    "copy-html": "cp ./src/index.html ./docs && cp -r ./src/views ./docs",
+    "build": "npm run clean && npm run copy-assets && npm run copy-css && npm run compile-ts && npm run copy-html"
   },
   "devDependencies": {
     "typescript": "^7.0.2"
