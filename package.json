@@ -16,9 +16,11 @@
     "copy-css": "cp ./src/style.css ./docs",
     "copy-assets": "cp -r ./src/assets ./docs",
     "copy-html": "cp ./src/index.html ./docs && cp -r ./src/views ./docs",
-    "build": "npm run clean && npm run copy-assets && npm run copy-css && npm run compile-ts && npm run copy-html"
+    "build": "npm run clean && npm run copy-assets && npm run copy-css && npm run compile-ts && npm run copy-html",
+    "serve": "live-server --open=/docs"
   },
   "devDependencies": {
+    "live-server": "^1.2.2",
     "typescript": "^7.0.2"
   }
 }
